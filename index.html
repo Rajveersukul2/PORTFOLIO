@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAJVEER SUKUL // RAIVR — Web Architect, Prompt Engineer & Music Composer</title>
+  <meta name="description" content="Portfolio of Rajveer Sukul (RAIVR) — Creative Technologist, Web Programmer, AI Prompt Engineer, Music Composer, and Visual Artist." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Floating Audio Soundscape Controller -->
+  <div id="bg-audio-container">
+    <audio id="bg-audio" loop src="your-music.mp3"></audio>
+    <button id="audio-toggle-btn" class="audio-btn" aria-label="Toggle Audio Soundscape">
+      <span class="audio-eq" aria-hidden="true">
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+      </span>
+      <span class="audio-icon">&#9654;</span>
+      <span class="audio-text">SOUND // OFF</span>
+    </button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <a href="#" class="logo" id="logo-trigger" title="RAIVR Terminal / Home">RAIVR<span>.DEV</span></a>
+    <div class="nav-links">
+      <a href="#about">Identity</a>
+      <a href="#skills">Arsenal</a>
+      <a href="#projects">Deployments</a>
+      <a href="#contact">Signal</a>
+      <button id="nav-cv-btn" class="nav-cv-action" type="button" aria-label="Preview CV">
+        <span class="cv-pill-icon">📄</span> CV PREVIEW
+      </button>
+    </div>
+  </nav>
+
+  <!-- Warp Mode Easter Egg Notification Banner -->
+  <div id="warp-alert" class="warp-alert" aria-live="polite">
+    <div class="warp-alert-content">
+      <span class="warp-icon">⚡</span>
+      <span class="warp-title">HYPERDRIVE OVERDRIVE ACTIVATED</span>
+      <span class="warp-subtitle">COSMIC WARP ENGINE ENGAGED // 2026 CYBERSPACE</span>
+    </div>
+  </div>
+
+  <!-- Main Website Content -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-visual">
+        <div class="img-frame" id="hero-img-frame" title="Hologram Unit: Click 3x for Overclock Mode">
+          <img src="IMG_20260802_185528.jpg" alt="Rajveer Sukul - Web Programmer & Music Composer" id="profile-img" />
+          <div class="scanline"></div>
+          <div class="hologram-glitch-overlay"></div>
+          <div class="corner-accents">
+            <span class="c-tl"></span>
+            <span class="c-tr"></span>
+            <span class="c-bl"></span>
+            <span class="c-br"></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="badge-group">
+          <span class="badge">SYSTEM READY // 2026</span>
+          <span class="badge badge-accent">AI & AUDIO SYNTHESIS</span>
+        </div>
+        <h1 class="glitch" data-text="RAJVEER SUKUL">RAJVEER SUKUL</h1>
+        <p class="tagline">Creative Technologist, Multi-Instrumentalist & Full-Stack Web Architect.</p>
+        <p class="sub-tagline">Operating at the intersection of raw sonic frequency, advanced generative AI, and bleeding-edge code.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Inspect Works</a>
+          <button id="hero-cv-btn" class="btn btn-cv" type="button" aria-label="Open Curriculum Vitae">
+            <span class="btn-cv-glow"></span>
+            <span class="btn-icon">📄</span>
+            <span class="btn-cv-text">Curriculum Vitae</span>
+            <span class="btn-tag">PREVIEW / PDF</span>
+          </button>
+          <a href="#contact" class="btn btn-secondary">Transmit Message</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Identity / About Section -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>IDENTITY // OVERVIEW</h2>
+      </div>
+      <div class="card glass">
+        <p>I don't just build interfaces or play notes—I construct immersive digital and sonic realities. From crafting Web Audio API synthesizers and responsive browser engines to tracking human movement through vision models, my work balances ruthless engineering standards with expressive, organic musicality.</p>
+      </div>
+    </section>
+
+    <!-- Core Skills Arsenal Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>CORE ARSENAL</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card glass skill-card">
+          <div class="skill-tag">SONIC PRODUCTION</div>
+          <h3>Music & Composition</h3>
+          <ul>
+            <li><strong>Multi-Instrumentalist:</strong> Acoustic guitar, melodic arrangements, and custom tuning logic.</li>
+            <li><strong>Vocalist & Songwriter:</strong> Deep lyrical storytelling, dynamic melody design, and expressive vocal delivery.</li>
+            <li><strong>Music Composition:</strong> End-to-end songcraft, chord progression architecture, and atmospheric audio textures.</li>
+          </ul>
+        </div>
+
+        <div class="card glass skill-card">
+          <div class="skill-tag">ENGINEERING & AI</div>
+          <h3>Code & Development</h3>
+          <ul>
+            <li><strong>Web Architect:</strong> HTML5, CSS3/PostCSS, Modular ES6+ JavaScript, Responsive Systems.</li>
+            <li><strong>Interactive Audio & Visuals:</strong> Web Audio API, Canvas rendering, MediaPipe ML integration.</li>
+            <li><strong>Prompt Engineering & AI:</strong> Multi-modal prompt systems, LLM workflows, generative media synthesis.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deployed Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>DEPLOYED PROJECTS</h2>
+      </div>
+      <div class="grid grid-2">
+        <article class="card glass project-card">
+          <div class="project-meta">LIVE SYSTEM // INTERACTIVE ML</div>
+          <h3>RAIVR GESTURE</h3>
+          <p>A web synthesizer and interactive audio-visual installation tracking real-time hand gestures to sculpt sounds dynamically in the browser.</p>
+          <a href="https://raivr-gesture.edgeone.dev" target="_blank" rel="noopener noreferrer" class="link-btn">Launch System &rarr;</a>
+        </article>
+
+        <article class="card glass project-card">
+          <div class="project-meta">AUDIO HUB // EXPERIENCES</div>
+          <h3>RAIVR PLATFORM</h3>
+          <p>The centralized ecosystem hosting experimental releases, audio showcases, and modern dynamic web applications under the RAIVR moniker.</p>
+          <a href="https://raivr.edgeone.dev" target="_blank" rel="noopener noreferrer" class="link-btn">Launch System &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Transmit Signal / Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>TRANSMIT SIGNAL</h2>
+      </div>
+      <div class="card glass contact-box">
+        <p>Available for high-impact creative direction, sound design, prompt architecture, and custom software builds.</p>
+        <div class="contact-links">
+          <a href="mailto:work.rajveersukul@gmail.com" class="contact-item">
+            <span class="label">DIRECT COMM</span>
+            <span class="val">work.rajveersukul@gmail.com</span>
+          </a>
+          <a href="https://www.instagram.com/raivr2026/" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span class="label">FREQUENCY</span>
+            <span class="val">@raivr2026</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Holographic CV Preview & Print/Download Modal Dialog -->
+  <div id="cv-modal" class="cv-modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="cv-modal-title">
+    <div class="cv-modal-container">
+      <!-- Modal Top Controls -->
+      <div class="cv-modal-header">
+        <div class="cv-modal-badge">
+          <span class="dot-live"></span> CURRICULUM VITAE // VERIFIED 2026
+        </div>
+        <div class="cv-modal-actions">
+          <button id="cv-print-btn" class="cv-action-btn print-btn" type="button" title="Download or Print full formatted CV as PDF">
+            <span class="action-icon">⬇</span> DOWNLOAD / PRINT PDF
+          </button>
+          <button id="cv-copy-email-btn" class="cv-action-btn email-btn" type="button" title="Copy Email">
+            <span class="action-icon">📋</span> COPY EMAIL
+          </button>
+          <button id="cv-close-btn" class="cv-close-btn" type="button" aria-label="Close CV Modal">&times;</button>
+        </div>
+      </div>
+
+      <!-- Printable & Scrollable Interactive CV Content -->
+      <div class="cv-modal-body" id="cv-printable-area">
+        <!-- Resume Header Sheet -->
+        <header class="cv-sheet-header">
+          <div class="cv-header-details">
+            <h2 id="cv-modal-title" class="cv-name">RAJVEER SUKUL</h2>
+            <p class="cv-titles">Web Programmer &bull; Prompt Engineer &bull; Music Composer &bull; Visual Artist</p>
+            <div class="cv-meta-info">
+              <span><strong>Email:</strong> <a href="mailto:work.rajveersukul@gmail.com">work.rajveersukul@gmail.com</a></span>
+              <span class="cv-divider">|</span>
+              <span><strong>Location:</strong> West Bengal, India</span>
+              <span class="cv-divider">|</span>
+              <span><strong>Status:</strong> Active / Open for Projects</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- CV 2-Column Grid Layout -->
+        <div class="cv-sheet-grid">
+          <!-- Left Column -->
+          <aside class="cv-col cv-col-left">
+            <!-- About Me -->
+            <section class="cv-section">
+              <h3 class="cv-sec-heading">ABOUT ME</h3>
+              <p class="cv-text">
+                Dynamic and versatile creative technologist blending front-end web programming and artificial intelligence workflows with professional music composition, lyric writing, and multimedia editing. Passionate about engineering interactive digital applications and crafting immersive audiovisual content.
+              </p>
+            </section>
+
+            <!-- Core Skills Matrix -->
+            <section class="cv-section">
+              <h3 class="cv-sec-heading">CORE SKILLS</h3>
+              
+              <div class="cv-skill-group">
+                <h4 class="cv-skill-group-title">TECH & AI</h4>
+                <div class="cv-tags">
+                  <span class="cv-tag">Web Programming</span>
+                  <span class="cv-tag">Coding</span>
+                  <span class="cv-tag">AI Workflows</span>
+                  <span class="cv-tag">Prompt Engineering</span>
+                  <span class="cv-tag">Prompt Writing</span>
+                  <span class="cv-tag">JavaScript / ES6+</span>
+                  <span class="cv-tag">Web Audio API</span>
+                </div>
+              </div>
+
+              <div class="cv-skill-group">
+                <h4 class="cv-skill-group-title">MUSIC & SOUND</h4>
+                <div class="cv-tags">
+                  <span class="cv-tag">Instrumentalist</span>
+                  <span class="cv-tag">Music Composition</span>
+                  <span class="cv-tag">Singer / Vocals</span>
+                  <span class="cv-tag">Lyricist & Writer</span>
+                  <span class="cv-tag">Audio Production</span>
+                  <span class="cv-tag">Acoustic Guitar</span>
+                </div>
+              </div>
+
+              <div class="cv-skill-group">
+                <h4 class="cv-skill-group-title">DESIGN & MEDIA</h4>
+                <div class="cv-tags">
+                  <span class="cv-tag">Photo Editing</span>
+                  <span class="cv-tag">Video Editing</span>
+                  <span class="cv-tag">Animations</span>
+                  <span class="cv-tag">Visual Storytelling</span>
+                  <span class="cv-tag">Motion Graphics</span>
+                </div>
+              </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="cv-section">
+              <h3 class="cv-sec-heading">CERTIFICATIONS</h3>
+              <div class="cv-item">
+                <h4 class="cv-item-title">ADCA</h4>
+                <p class="cv-item-sub">Advance Diploma in Computer Applications</p>
+                <p class="cv-item-desc">Software systems, computing fundamentals, and applied office automation suites.</p>
+              </div>
+              <div class="cv-item">
+                <h4 class="cv-item-title">Artificial Intelligence (AI)</h4>
+                <p class="cv-item-sub">Specialized Training</p>
+                <p class="cv-item-desc">Specialized training in AI workflows, generative toolsets, and advanced prompt engineering architectures.</p>
+              </div>
+            </section>
+
+            <!-- Education -->
+            <section class="cv-section">
+              <h3 class="cv-sec-heading">EDUCATION</h3>
+              <div class="cv-item">
+                <h4 class="cv-item-title">Senior Secondary (Class XII)</h4>
+                <p class="cv-item-sub">Mukto Sikha Kendra (NIOS Board)</p>
+                <p class="cv-item-desc">West Bengal, India</p>
+              </div>
+            </section>
+          </aside>
+
+          <!-- Right Column -->
+          <div class="cv-col cv-col-right">
+            <!-- Technical Highlights -->
+            <section class="cv-section">
+              <h3 class="cv-sec-heading">TECHNICAL & PROGRAMMING HIGHLIGHTS</h3>
+              
+              <div class="cv-block">
+                <div class="cv-block-header">
+                  <div>
+                    <h4 class="cv-block-title">Web Application & Engine Architecture</h4>
+                    <p class="cv-block-sub">Interactive Web Systems & Modern Code Solutions</p>
+                  </div>
+                  <span class="cv-role-badge">Developer</span>
+                </div>
+                <ul class="cv-bullet-list">
+                  <li>Designed and coded high-performance web applications combining modern HTML, CSS, and clean JavaScript logic.</li>
+                  <li>Built interactive browser tools featuring dynamic state handling, custom animations, and responsive layouts across viewports.</li>
+                  <li>Applied sound programming logic and data structures for smooth client-side interaction.</li>
+                </ul>
+              </div>
+
+              <div class="cv-block">
+                <div class="cv-block-header">
+                  <div>
+                    <h4 class="cv-block-title">AI & Generative Prompt Architecture</h4>
+                    <p class="cv-block-sub">Structured Prompting & Workflow Optimization</p>
+                  </div>
+                  <span class="cv-role-badge">Specialist</span>
+                </div>
+                <ul class="cv-bullet-list">
+                  <li>Authored targeted, multi-modal prompt systems for large language models, generative image synthesis, and automated code generation.</li>
+                  <li>Engineered strict contextual constraints, stylistic guidelines, and iterative prompt loops for consistent creative outputs.</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Music & Audio Highlights -->
+            <section class="cv-section">
+              <h3 class="cv-sec-heading">MUSIC, AUDIO & CREATIVE COMPOSITION</h3>
+              
+              <div class="cv-block">
+                <div class="cv-block-header">
+                  <div>
+                    <h4 class="cv-block-title">Independent Music Production & Composition</h4>
+                    <p class="cv-block-sub">Vocals, Instrumental Performance & Lyric Writing</p>
+                  </div>
+                  <span class="cv-role-badge">Artist & Producer</span>
+                </div>
+                <ul class="cv-bullet-list">
+                  <li>Composed and arranged original tracks incorporating acoustic guitar instrumentation, multi-part chords, and structured melodies.</li>
+                  <li>Penned heartfelt, thematic lyrics spanning multilingual narratives with expressive vocal performances.</li>
+                  <li>Managed the complete creative pipeline from songwriting and tracking to post-production and distribution.</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Multimedia & Visual Design -->
+            <section class="cv-section">
+              <h3 class="cv-sec-heading">MULTIMEDIA, ANIMATION & VISUAL DESIGN</h3>
+              
+              <div class="cv-block">
+                <div class="cv-block-header">
+                  <div>
+                    <h4 class="cv-block-title">Video Editing, Animation & Graphic Design</h4>
+                    <p class="cv-block-sub">Digital Content Creation & Visual Production</p>
+                  </div>
+                  <span class="cv-role-badge">Editor & Animator</span>
+                </div>
+                <ul class="cv-bullet-list">
+                  <li>Directed and edited dynamic video projects with rhythm-matched cuts, color correction, and sound design.</li>
+                  <li>Developed 2D animation sequences, keyframe motion graphics, and stylized visual storytelling assets.</li>
+                  <li>Produced professional photo retouching, graphic thumbnails, and visual branding assets for modern digital releases.</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cyber Terminal Easter Egg HUD Overlay -->
+  <div id="terminal-modal" class="terminal-overlay" aria-hidden="true" role="dialog" aria-label="Cyber Terminal HUD">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-controls">
+          <span class="t-btn t-close" id="terminal-close-btn" title="Close Terminal"></span>
+          <span class="t-btn t-min"></span>
+          <span class="t-btn t-max"></span>
+        </div>
+        <div class="terminal-title">RAIVR_OS // CYBER_TERMINAL_v2.6 [KEY: ~ TO TOGGLE]</div>
+        <div class="terminal-tag">ENCRYPTED</div>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <div class="t-line t-banner">
+  _____         _____ _    _ _____   ______ _____  ______      __
+ |  __ \ /\    |_   _| |  | |  __ \ |  ____|  __ \|  ____/\   / /
+ | |__) /  \     | | | |  | | |__) || |__  | |  | | |__ /  \ / / 
+ |  _  / /\ \    | | | |  | |  _  / |  __| | |  | |  __/ /\ \ <  
+ | | \ \  __ \  _| |_| |__| | | \ \ | |____| |__| | | / ____ \ \ 
+ |_|  \_\/  \_\_____/ \____/|_|  \_\|______|_____/|_|/_/    \_ \_\
+        </div>
+        <div class="t-line t-system">Initialized RAIVR-CYBER-CORE 2026. Type <span class="t-cmd-highlight">help</span> to view available commands.</div>
+      </div>
+      <form id="terminal-form" class="terminal-input-row" autocomplete="off">
+        <label for="terminal-input" class="terminal-prompt">raivr@station:~$</label>
+        <input type="text" id="terminal-input" class="terminal-input" spellcheck="false" autocomplete="off" />
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Rajveer Sukul. All rights reserved.</p>
+      <button id="footer-status-btn" class="terminal-status" title="Interactive Easter Egg: Click to open Terminal HUD (or press ~)">
+        <span class="status-indicator"></span> STATUS: ONLINE // ENCRYPTED
+      </button>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="background.js"></script>
+  <script src="logic.js"></script>
+</body>
+</html>
